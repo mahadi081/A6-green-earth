@@ -97,7 +97,6 @@
           </div>
         </div>
       </nav>
-      <!-- hero section starts here -->
       <section
         class="bg-[#CFF0DC] flex flex-col sm:flex-row items-center w-screen justify-between"
       >
@@ -119,6 +118,56 @@
         <img src="./assets/hero-leaf2.png" alt="" />
       </section>
     </header>
+    <main class="bg-[#DCFCE7]">
+      <h1
+        class="text-center text-[32px] text-[#1F2937] font-semibold pb-10 pt-24"
+      >
+        Choose Your Trees
+      </h1>
+
+       <section
+        class="grid grid-cols-1 sm:grid-cols-6 max-w-[1650px] mx-auto sm:gap-[30px]">
+        
+        <div class="catagoryLeft bg-red sm:">
+          <h1
+            class="text-xl font-semibold text-[#000000] pb-4 text-center sm:text-left"
+          >
+            Categories
+          </h1>
+          <button
+            id="allTreeBtn"
+            class="w-full text-[#1F2937] sm:text-left px-2 CatagoryButtonD rounded-md p-2 removeCatarogyDesign hover:bg-[#15803D]"
+          >
+            All trees
+          </button>
+          <div
+            id="CatagoryLeft"
+            class="sm:text-left grid grid-cols-2 sm:gap-4 sm:block w-full"
+          ></div>
+        </div>
+        
+        <div id="spinbar" class="flex justify-center px-1 col-span-4 hidden">
+          <span class="loading loading-dots loading-xl"></span>
+        </div>
+        <div
+          id="Product-container"
+          class="productcenter col-span-4 grid grid-cols-1 sm:grid-cols-3 gap-[30px] auto-rows-fr"
+        ></div>
+
+        <!-- Cart sections starts from here -->
+        <div class="cartRight rounded-2xl bg-white p-4">
+          <h1 class="font-semibold text-xl text-[#000000]">Your Cart</h1>
+
+          <div id="carContainer"></div>
+          <div
+            class="flex justify-between border-t boder-[1px] border-[#1F2937] font-semibold text-[16px] text-[#1F2937]"
+          >
+            <h2>Total:</h2>
+            <h2>৳ <span id="totalAmount"> 0</span></h2>
+          </div>
+        </div>
+      </section>
+    </main>
     
 </body>
 </html>
